@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E -o $SCFILE
+echo -E $CFILE >> c
