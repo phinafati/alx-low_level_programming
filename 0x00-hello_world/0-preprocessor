@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -E SCFILE -O c
