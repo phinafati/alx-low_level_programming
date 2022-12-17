@@ -1,1 +1,1 @@
-1-main.c
+2nd task
