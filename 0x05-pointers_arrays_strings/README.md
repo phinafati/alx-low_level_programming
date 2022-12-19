@@ -1,1 +1,1 @@
-0x05. c - pointers_arrays_strings
+0x05. c -pointers_arrays_strings
