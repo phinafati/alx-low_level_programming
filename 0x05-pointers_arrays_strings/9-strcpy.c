@@ -7,7 +7,7 @@
  *
  * Return: This return copy
  */
-char *_strcpy(char *dest, char *srcc)
+char *_strcpy(char *dest, char *src)
 {
 	char *start = dest;
 
@@ -18,5 +18,5 @@ char *_strcpy(char *dest, char *srcc)
 		srcc++;
 	}
 	*dest = '\0';
-	return (stsrt);
+	return (start);
 }
