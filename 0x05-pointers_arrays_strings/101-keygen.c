@@ -4,7 +4,7 @@
 
 /**
  * main - generates random valid passwords
- * return: 0 (on success)
+ * return: 0 (on success).
  *
  */
 
@@ -12,6 +12,7 @@ int main(void)
 {
 
 	int pass, sum;
+
 
 	srand(time(NULL));
 	sum = 0;
