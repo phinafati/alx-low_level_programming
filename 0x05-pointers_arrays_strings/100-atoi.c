@@ -8,6 +8,7 @@
  */
 int _atoi(char *s)
 {
+
 	int sign;
 	unsigned int num;
 	char *tmp;
@@ -29,5 +30,4 @@ int _atoi(char *s)
 		}while (*tmp >= '0' && *tmp <= '9');
 	}
 	return (num * sign);
-}
-				
+}			
