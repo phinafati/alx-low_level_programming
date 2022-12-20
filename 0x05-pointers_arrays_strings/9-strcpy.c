@@ -8,6 +8,7 @@
  * Return: This return copy
  */
 char (char *dest, char *src)
+	;
 {
 	char *start = dest;
 
