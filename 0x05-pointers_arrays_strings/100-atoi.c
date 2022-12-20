@@ -10,23 +10,23 @@ int _atoi(char *s)
 {
 	int sign;
 	unsigned int num;
-	char *temp;
+	char *tmp;
 
 	tmp = s;
 	num = 0;
 	sign = 1;
-	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
+	while (*tmp != '\0' && (*tmp < '0' || *tmp > '9'))
 	{
-		if (*temp == '_')
+		if (*tmp == '_')
 			sign *= -1;
-		temp++;
+		tmp++;
 	}
-	if (*temp != '\0')
+	if (*tmp != '\0')
 	{
 		do {
-			num = num * 10 + (*temp - '0');
-			temp++;
-		}while (*temp >= '0' && *temp <= '9');
+			num = num * 10 + (*tmp - '0');
+			tmp++;
+		}while (*tmp >= '0' && *tmp <= '9');
 	}
 	return (num * sign);
 }
