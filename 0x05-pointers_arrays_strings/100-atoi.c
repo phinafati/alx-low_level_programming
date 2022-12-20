@@ -13,6 +13,7 @@ int _atoi(char *s)
 	unsigned int num;
 	char *tmp;
 
+
 	tmp = s;
 	num = 0;
 	sign = 1;
@@ -27,7 +28,7 @@ int _atoi(char *s)
 		do {
 			num = num * 10 + (*tmp - '0');
 			tmp++;
-		} while (*tmp >= '0' && *tmp <= '9');
+		}  while (*tmp >= '0' && *tmp <= '9');
 	}
 	return (num * sign);
 }			
