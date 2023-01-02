@@ -4,7 +4,7 @@
 
 /**
  * main - generates random valid passwords
- * return: 0 (on success).
+ * Return: Always 0 (on success).
  *
  */
 
