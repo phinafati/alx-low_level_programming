@@ -9,10 +9,10 @@
 
 int main(void)
 {
-	charlett;
+	char lett;
 
 	for (lett = 'a'; lett <= 'z'; lett++)
-		putcar(lett);
+		putchar(lett);
 	for (lett = 'A'; lett <= 'z'; lett++)
 		putchar(lett);
 	putchar('\n');
