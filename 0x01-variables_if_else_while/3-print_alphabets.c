@@ -1,28 +1,20 @@
 #include <stdio.h>
+
 /**
  * main - main block
  * Description: print the alphabet in lower case
  * and the in upperccase, follow by a new line
- * Return: o
+ * Return: Always 0
  */
+
 int main(void)
 {
-	char c = 'a';
+	charlett;
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-
-	c = 'A';
-
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
-
+	for (lett = 'a'; lett <= 'z'; lett++)
+		putcar(lett);
+	for (lett = 'A'; lett <= 'z'; lett++)
+		putchar(lett);
 	putchar('\n');
 	return (0);
 }
