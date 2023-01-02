@@ -4,24 +4,23 @@
  * _strcat - cocatenates two strings
  * @dest: pointer destination
  * @src: pointer source
- *
  * Return: void
  */
 
 char *_strcat(char *dest, char *src)
 {
-int a = -1, i;
+	int i, j;
 
-for (i = 0; dest[i] != '\0')
-	i++;
+	i = 0
+		while (dest[i] != '\0')
+			i++;
 
-do {
-	a++;
-	dest[i] = src[a];
-	i++;
-
-} while (src[j] != '\0');
-
-return (dest);
-
+	/*i -= 1;*/
+	for (j = 0; src[j] != '\0'; j++)
+	{
+		dest[i] =  src[j];
+		i++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
