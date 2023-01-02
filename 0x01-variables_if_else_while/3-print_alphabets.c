@@ -13,7 +13,7 @@ int main(void)
 
 	for (lett = 'a'; lett <= 'z'; lett++)
 		putchar(lett);
-	for (lett = 'A'; lett <= 'z'; lett++)
+	for (lett = 'A'; lett <= 'Z'; lett++)
 		putchar(lett);
 	putchar('\n');
 	return (0);
