@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * main - main block
- * Description: get a random it with 5
- * Return: 0
+ * Description: program that prints the alphabet in lowercase
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
-
-	char c = 'a';
+	char num = 'a';
 	
-	while (c <= 'z')
+	while (num <= 'z')
 	{
-		putchar(c);
-		c++;
+		putchar(num);
+		nu++;
 	}
 	putchar('\n');
 	return (0);
