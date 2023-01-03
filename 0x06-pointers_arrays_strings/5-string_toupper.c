@@ -6,7 +6,7 @@
  * Return: a character point
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i;
 
@@ -17,4 +17,3 @@ char *string_toupper(char *)
 	}
 	return (str);
 }
-
