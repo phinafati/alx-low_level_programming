@@ -10,21 +10,23 @@
 
 int main(void)
 {
-
-	int pass, sum;
-
-
-	srand(time(NULL));
+	int i, j, sum;
+	char psswrd[100];
 
 	sum = 0;
-	while (sum <= 2645)
+	srand(time(NULL));
+	for (i = 0; i < 100; i++)
 	{
-		pass = (rand()  %  128);
-
-		sum += pass;
-		printf("%c", pass);
+		psswrd[i] = rand() % 78;
+		sum = sum + (psswrd[i] + '0');
+		putchar(psswrd[i] + '0');
+		if ((2772 - sum) - '0' < 78)
+		{
+			j = 2772 - sum - '0';
+			sum = sum + j;
+			putchar(j + '0');
+			break;
+		}
 	}
-	printf("%c", 2772 - sum);
-
 	return (0);
 }
