@@ -6,7 +6,7 @@
  * Return: 0 or a convareted integer from string
  */
 
-int _atoi(char *s);
+int _atoi(char *s)
 {
 	int a = 1;
 	unsigned int b = 0;
