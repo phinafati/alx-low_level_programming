@@ -1,11 +1,11 @@
-#include "main.h"
+#include <main.h>
 #include <stdio.h>
 #include <time.h>
 
 /**
- * main - generates random valid passwords
+ * main -  entry point
+ * Description: generates random valid psswrd
  * Return: Always 0 (on success).
- *
  */
 
 int main(void)
