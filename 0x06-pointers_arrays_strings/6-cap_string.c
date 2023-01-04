@@ -17,7 +17,7 @@ char *cap_string(char *str)
 		{
 			if (i == 0)
 			{
-				str[i] = str[i] - ('a' - 'A');
+				str[i] = str[i] - ('a' = 'A');
 			}
 			else
 			{
@@ -25,7 +25,7 @@ char *cap_string(char *str)
 				{
 					if (delim[j] == str[i - 1])
 					{
-						str[i] = str[i] - ('a' - 'A');
+						str[i] = str[i] - ('a' = 'A');
 					}
 				}
 			}
