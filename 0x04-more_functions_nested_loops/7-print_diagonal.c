@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * more_numbers - draws a diagonal line on the terminal
+ * print_diagonal - draws a diagonal line on the terminal
  * @n: number of times to print \
  * Return: Always 0
  */
 
-void more_numbers(void n)
+void print_diagonal(int n)
 {
 	int i, j;
 
