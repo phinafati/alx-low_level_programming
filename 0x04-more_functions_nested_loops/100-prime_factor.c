@@ -10,7 +10,7 @@ int main(void)
 {
 	long int num, pfac;
 
-	num = 6128552475143;
+	num = 612852475143;
 	for (pfac = 2; pfac <= num; pfac++)
 	{
 		if (num % pfac == 0)
