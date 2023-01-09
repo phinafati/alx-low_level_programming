@@ -1,14 +1,13 @@
 #include "main.h"
 
 /**
- * _abs - copmuter the absolute value of an integer
- * @m: parameter of an integer type
- * Return: negative or positive
+ * _abs - return abs value
+ * @n : number to checck
+ * Return:0 or 1
  */
-int _abs(int m)
+
+int _abs(int n)
 {
-	if (m >= 0)
-		return (m);
-	else
-		return (-m);
+
+	return (n >= 0 ? n : n * -1);
 }

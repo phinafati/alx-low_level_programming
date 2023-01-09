@@ -1,37 +1,31 @@
 #include "main.h"
-#include <stdbool.h>
 
 /**
- * _strstr - that locates a substring
- * @haystack: main string
- * @needle: the substring to find in main string
- * Return: pointer to the beginning of the located substring
+ * _strstr - first occurrence of the substring needle in the string haystack
+ * @haystack: main str to be examined
+ * @needle: searched in hystack
+ * Return: return 0
+ *
  */
+
 char *_strstr(char *haystack, char *needle)
 {
-	int i;
-	bool dec;
+	char *str1, *str2; /*Declaring variables*/
 
-	dec = false;
-	if (*needle == 0)
-		return (haystack);
-	for (; *haystack; haystack++)
+	while (*haystack != '\0')
 	{
-		if (*needle == *haystack)
-		{
-			for (i = 0; needle[i] != '\0'; i++)
-			{
-				if (*(haystack + i) == needle[i])
-					dec = true;
-				else
-				{
-					dec = false;
-				}
-			}
-			if (dec == true)
-				return (haystack);
-		}
-	}
-	return ('\0');
-}
+		str1 = haystack; /*values*/
+		str2 = needle;
 
+		/*star WHILE*/
+		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
+		{
+			haystack++;
+			str2++;
+		}
+		if (*str2 == '\0')
+			return (str1);
+		haystack = str1 + 1;
+	}
+	return (0);
+}

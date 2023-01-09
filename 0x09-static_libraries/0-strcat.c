@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcat - check the code
- * @dest: first argument
- * @src: second argument
- * Return: a pointer of the resulting string
+ **_strcat - cocatenates two strings
+ * @dest: pointer destination
+ * @src: pointer source
+ * Return: void
  */
 
 char *_strcat(char *dest, char *src)
@@ -18,7 +18,7 @@ char *_strcat(char *dest, char *src)
 	/*i -= 1;*/
 	for (j = 0; src[j] != '\0'; j++)
 	{
-		dest[i] = src[j];
+		dest[i] =  src[j];
 		i++;
 	}
 	dest[i] = '\0';
