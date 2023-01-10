@@ -1,5 +1,5 @@
+#include <stdio.h>
 #include "main.h"
-#include <stdio.h>>
 
 /**
  * main - print the name of progress
@@ -8,8 +8,10 @@
  * Return: Always 0 (success)
  */
 
-int main(int argc, __attribute__((chmod)), char *argv[])
+int main(int argc, char *argv[])
 {
-	printf(char *argv);
+	(void) argc;
+	printf("%s\n", arrgv[0]);
+
 	return (0);
 }
