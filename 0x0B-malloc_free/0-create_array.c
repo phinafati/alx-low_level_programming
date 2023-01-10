@@ -21,6 +21,7 @@ char *create_array(unsigned int size, char c)
 	if (buffer == 0)
 	{
 		return (NULL);
+	}
 		else
 	{
 		position = 0;
