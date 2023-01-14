@@ -9,7 +9,7 @@
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
-int is_digit(int *s)
+int is_digit(char *s)
 {
 	int i = 0;
 
@@ -52,6 +52,7 @@ int _strlen(char *s)
  *
  * Return: always 0 (success)
  */
+
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
