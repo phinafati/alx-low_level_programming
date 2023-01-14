@@ -11,7 +11,6 @@
 
 int main(int argc, char **argv)
 {
-
 	int n, m, diff;
 
 	if (argc != 3)
