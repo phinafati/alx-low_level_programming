@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <ctype.h>
+#include <stdio.h>
 
 /**
  * main - main funct
@@ -8,6 +8,7 @@
  * @argv: param poiter
  * Return: int
  */
+
 int main(int argc, char *argv[])
 {
 	int i, j, sum = 0;
