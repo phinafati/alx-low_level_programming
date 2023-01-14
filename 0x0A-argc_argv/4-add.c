@@ -1,26 +1,29 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
+#include <ctype.h>
 
 /**
- * main - prints the multiplication of two integers
- * @argc: argument count
- * @argv: argument vector
- * Return: 0 if it works, 1 if there is an ERROR
+ * main - main funct
+ * @argc: param count
+ * @argv: param poiter
+ * Return: int
  */
-
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	int n, m, diff;
+	int i, j, sum = 0;
 
-	if (argc != 3)
+	for (i = 1; i < argc; i++)
 	{
-		printf("Error\n");
-		return (1);
+		for (j = 0; argv[i][j] != '\0'; j++)
+		{
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+		sum += atoi(argv[i]);
 	}
-	n = atoi(argv[1]);
-	m = atoi(argv[2]);
-	diff = n * m;
-	printf("%i\n", diff);
+	printf("%d\n", sum);
 	return (0);
 }
