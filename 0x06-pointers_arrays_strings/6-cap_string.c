@@ -2,11 +2,10 @@
 
 /**
  * cap_string - capitalizes all words of a string
- * @str: passed string to capitalize
- * Return: a character pointer
+ * @s: string
+ * Return: address of s
  */
-
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
 	int i = 0, j;
 	char a[] = " \t\n,;.!?\"(){}";
