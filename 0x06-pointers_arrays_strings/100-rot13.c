@@ -1,27 +1,29 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * rot13 - encodes a string usinng rot13
- * @str: passed string
- * Return: a character point
+ * rot13 - encodes string to rot13
+ * @s: string to encode
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-
-char *rot13(char *str);
+char *rot13(char *s)
 {
 	int i, j;
+	char rot13a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	char set1[] = "abcdefghijklmnopqrstuvwxyz";
-	char set2[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	for (i = 0; str[i]; i++)
+	j = 0;
+	while (s[j] != 0)
 	{
-		for (j = 0; j < 52; j++)
+		for (i = 0; i < 52; i++)
 		{
-			if (set1[j] == str[i])
+			if (s[j] == rot13a[i])
 			{
-				str[i] = set2[j];
+				s[j] = rot13b[i];
 				break;
 			}
 		}
+		j++;
 	}
-	return (str);
+	return (s);
 }
