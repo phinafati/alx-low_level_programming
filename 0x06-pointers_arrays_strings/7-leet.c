@@ -2,27 +2,23 @@
 
 /**
  * leet - encodes a string into 1337
- * @str: passed string
- * Return: a character poiter
+ * @s: string to encode
+ *
+ * Return: address of s
  */
-
-char *leet(char *str)
+char *leet(char *s)
 {
 	int i, j;
-	char set1[] = "aAeEoOtlL";
-	char set2[] = "4433007711";
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	for (i = 0; str[i] != '\0'; i++)
+	for (i = 0; *(s + i); i++)
 	{
-		j = 0;
-		while (j <= 9)
+		for (j = 0; j <= 9; j++)
 		{
-			if (set1[j] == str[i])
-			{
-				str[i] = set2[j];
-			}
-			j++;
+			if (a[j] == s[i])
+				s[i] = b[j];
 		}
 	}
-	return (str);
+	return (s);
 }
