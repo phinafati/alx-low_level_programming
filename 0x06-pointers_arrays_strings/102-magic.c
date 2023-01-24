@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - print string
+ * return: void
+ */
 int main(void)
 {
 	int n;

@@ -8,47 +8,39 @@
  * @size_r: buffer size
  * Return: a character pointer
  */
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int o, p, q, u, s, t;
+	int i, j, k, l, m, n;
 
-	o = 0;
-	p = 0;
-	while (n1[o])
-		o++;
-	while (n2[p])
-		p++;
-	if (o > size_r || p > size_r)
+	for (i = 0; n1[i]; i++)
+		;
+	for (j = 0; n2[j]; j++)
+		;
+	if (i > size_r || j > size_r)
 		return (0);
-	q = 0;
-	o = o - 1;
-	p = p - 1;
-	u = o;
-	while (u < size_r - 1)
+	m = 0;
+	for (i -= 1, j -= 1, k = 0; k < size_r - 1; i--, j--, k++)
 	{
-		s = q;
-		if (o >= 0)
-			s += n1[o] - 'o';
-		if (p  >= 0)
-			s += n2[p] - '0';
-		if (o < 0 && p < 0 && s == 0)
+		n = m;
+		if (i >= 0)
+			n += n1[i] - '0';
+		if (j >= 0)
+			n += n2[j] - '0';
+		if (i < 0 && j < 0 && n == 0)
+		{
 			break;
-		q = s / 10;
-		r[u] = s % 10 + '0';
-		o--;
-		p--;
-		u++;
+		}
+		m = n / 10;
+		r[k] = n % 10 + '0';
 	}
-	r[u] = '\0';
-	if (o >= 0 || p >= 0 || q)
+	r[k] = '\0';
+	if (i >= 0 || j >= 0 || m)
 		return (0);
-	for (u -= 1, t = 0; t < u; u--, t++)
+	for (k -= 1, l = 0; l < k; k--, l++)
 	{
-		q = r[u];
-		r[u] = r[t];
-		r[t] = q;
+		m = r[k];
+		r[k] = r[l];
+		r[l] = m;
 	}
 	return (r);
 }
-
