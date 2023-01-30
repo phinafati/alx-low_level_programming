@@ -8,7 +8,6 @@
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
-
 int is_digit(char *s)
 {
 	int i = 0;
@@ -28,7 +27,6 @@ int is_digit(char *s)
  *
  * Return: the length of the string
  */
-
 int _strlen(char *s)
 {
 	int i = 0;
@@ -56,7 +54,6 @@ void errors(void)
  *
  * Return: always 0 (success)
  */
-
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
@@ -84,7 +81,7 @@ int main(int argc, char *argv[])
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}
-		if (carry > 0)
+	if (carry > 0)
 			result[len1 + len2 + 1] += carry;
 	}
 	for (i = 0; i < len - 1; i++)
@@ -99,4 +96,4 @@ int main(int argc, char *argv[])
 	putchar('\n');
 	free(result);
 	return (0);
-}
+
