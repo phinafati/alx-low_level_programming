@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 			result[len1 + len2 + 1] = carry % 10;
 			carry /= 10;
 		}
-	if (carry > 0)
+		if (carry > 0)
 			result[len1 + len2 + 1] += carry;
 	}
 	for (i = 0; i < len - 1; i++)
@@ -89,11 +89,11 @@ int main(int argc, char *argv[])
 		if (result[i])
 			a = 1;
 		if (a)
-			putchar(result[i] + '0');
+			_putchar(result[i] + '0');
 	}
 	if (!a)
-		putchar('0');
-	putchar('\n');
+		_putchar('0');
+	_putchar('\n');
 	free(result);
 	return (0);
-
+}
