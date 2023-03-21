@@ -8,7 +8,6 @@
  *
  * Return: 0 if a non-digit is found, 1 otherwise
  */
-
 int is_digit(char *s)
 {
 	int i = 0;
@@ -16,10 +15,8 @@ int is_digit(char *s)
 	while (s[i])
 	{
 		if (s[i] < '0' || s[i] > '9')
-
 			return (0);
 		i++;
-
 	}
 	return (1);
 }
@@ -30,7 +27,6 @@ int is_digit(char *s)
  *
  * Return: the length of the string
  */
-
 int _strlen(char *s)
 {
 	int i = 0;
@@ -45,7 +41,6 @@ int _strlen(char *s)
 /**
  * errors - handles errors for main
  */
-
 void errors(void)
 {
 	printf("Error\n");
@@ -59,7 +54,6 @@ void errors(void)
  *
  * Return: always 0 (Success)
  */
-
 int main(int argc, char *argv[])
 {
 	char *s1, *s2;
@@ -84,9 +78,7 @@ int main(int argc, char *argv[])
 		{
 			digit2 = s2[len2] - '0';
 			carry += result[len1 + len2 + 1] + (digit1 * digit2);
-
 			result[len1 + len2 + 1] = carry % 10;
-
 			carry /= 10;
 		}
 		if (carry > 0)
@@ -97,11 +89,11 @@ int main(int argc, char *argv[])
 		if (result[i])
 			a = 1;
 		if (a)
-			putchar(result[i] + '0');
+			_putchar(result[i] + '0');
 	}
 	if (!a)
-		putchar('0');
-	putchar('\n')
-	free(result)
+		_putchar('0');
+	_putchar('\n');
+	free(result);
 	return (0);
 }
