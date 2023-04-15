@@ -11,7 +11,7 @@ void shash_table_delete(shash_table_t *ht);
  * shash_table_create - Creates a sorted hash table.
  * @size: The size of new sorted hash table.
  *
- * * Return: If an error occurs - NULL.
+ * Return: If an error occurs - NULL.
  *         Otherwise - a pointer to the new sorted hash table.
  */
 shash_table_t *shash_table_create(unsigned long int size)
@@ -147,7 +147,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 }
 
 /**
- * shash_table_print - Prints a sorted hash table in order.
+ *  shash_table_print - Prints a sorted hash table in order.
  * @ht: A pointer to the sorted hash table.
  */
 void shash_table_print(const shash_table_t *ht)
